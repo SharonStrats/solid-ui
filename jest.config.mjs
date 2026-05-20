@@ -15,7 +15,9 @@ export default {
   ],
   setupFilesAfterEnv: ['./test/helpers/setup.ts'],
   moduleNameMapper: {
-    '^.+\\.css$': '<rootDir>/__mocks__/styleMock.js'
+    '^.+\\.css$': '<rootDir>/__mocks__/styleMock.js',
+    '^solid-logic$': '<rootDir>/../solid-logic/src',
+    '^@uvdsl/solid-oidc-client-browser$': '<rootDir>/test/mocks/solid-oidc-client-browser.ts'
   },
   testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
   roots: ['<rootDir>/src', '<rootDir>/test', '<rootDir>/__mocks__'],
